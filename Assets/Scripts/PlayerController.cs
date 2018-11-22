@@ -12,6 +12,21 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Boundary boundary;
 
+    public GameObject shot;
+    public Transform Bullet_Spawn;
+    public float fireRate;
+
+    private float nextFire;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, Bullet_Spawn.position, Bullet_Spawn.rotation);
+        }
+    }
+
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
