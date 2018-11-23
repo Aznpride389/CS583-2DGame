@@ -1,0 +1,14 @@
+'2D Pixel Spaceship - Two Small Ships' By EVPO Games
+https://assetstore.unity.com/packages/2d/characters/2d-pixel-spaceship-two-small-ships-131545
+	-Utelized 'ship2' prefab, 'fireball-red-tail-med'.
+
+'Asteroids Pack' By Mark Dion
+https://assetstore.unity.com/packages/3d/environments/asteroids-pack-84988
+	-Utelized 'bottom' texture, 'Asteriod 1' prefab, 'Random Rotater' script attached to 
+	 aforementioned prefab
+
+Video on Inspector fields
+https://youtu.be/xMwjzSlRd00
+
+Boundry system
+https://answers.unity.com/questions/717620/how-to-set-screen-boundaries.html

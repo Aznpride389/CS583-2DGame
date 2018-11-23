@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour {
     private bool gameOver;
     private bool restart;
     private int score;
+    private AudioSource audioSource;
 
     void Start()
     {
@@ -39,6 +40,8 @@ public class GameController : MonoBehaviour {
                 Scene loadedLevel = SceneManager.GetActiveScene();
                 SceneManager.LoadScene(loadedLevel.buildIndex);
                 Time.timeScale = 1;
+                audioSource = GetComponent<AudioSource>();
+                audioSource.Play();
             }
         }
     }
@@ -81,5 +84,7 @@ public class GameController : MonoBehaviour {
             restart = true;
         }
         Time.timeScale = 0;
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Stop();
     }
 }

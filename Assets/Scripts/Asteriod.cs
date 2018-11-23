@@ -7,6 +7,7 @@ public class Asteriod : MonoBehaviour {
     public float speed;
     public int pointValue;
     private GameController gameController;
+    private AudioSource audioSource;
 
     void Start ()
     {
@@ -26,13 +27,18 @@ public class Asteriod : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+
         if (other.tag == "Player")
         {
             gameController.GameOver();
-        }
+        } 
 
         gameController.AddScore(pointValue);
         Destroy(other.gameObject);
-        Destroy(gameObject);
+        Destroy(gameObject, .2f);
+
+
     }
 }
