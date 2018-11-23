@@ -29,7 +29,6 @@ public class PlayerController : MonoBehaviour
 
             audioSource = GetComponent<AudioSource>();
             audioSource.Play();
-
         }
     }
 

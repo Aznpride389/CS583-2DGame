@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Asteriod : MonoBehaviour
+public class Debris : MonoBehaviour
 {
 
     public float speed;
-    public int pointValue;
-    private GameController gameController;
     private AudioSource audioSource;
+    private GameController gameController;
 
     void Start ()
     {
@@ -20,7 +19,6 @@ public class Asteriod : MonoBehaviour
         var rb2D = GetComponent<Rigidbody2D>();
         rb2D.velocity = -transform.up * speed;
     }
-
     void OnBecameInvisible()
     {
         Destroy(gameObject);
@@ -28,15 +26,18 @@ public class Asteriod : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.Play();
-
-        if (other.tag == "Player")
+        if (other.tag == "Bullet")
         {
+            Destroy(other.gameObject);
+
+        }
+        else if (other.tag == "Player")
+        {
+            Destroy(other.gameObject);
             gameController.GameOver();
-        } 
-        gameController.AddScore(pointValue);
-        Destroy(other.gameObject);
-        Destroy(gameObject, .2f);
+            audioSource = GetComponent<AudioSource>();
+            audioSource.Play();
+        }
+
     }
 }

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class GameController : MonoBehaviour {
+public class GameController : MonoBehaviour
+{
 
-    public GameObject hazard;
+    public GameObject[] hazards;
     public Vector2 spawnValues;
     public int hazardCount;
     public float spawnWait;
@@ -53,13 +54,13 @@ public class GameController : MonoBehaviour {
         {
             for (int i = 0; i < hazardCount; i++)
             {
+                GameObject hazard = hazards[Random.Range(0, hazards.Length)];
                 Vector2 spawnPosition = new Vector2(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y);
                 Quaternion spawnRotation = Quaternion.identity;
                 Instantiate(hazard, spawnPosition, spawnRotation);
                 yield return new WaitForSeconds(spawnWait);
             }
             yield return new WaitForSeconds(waveWait);
-
         }       
     }
 
