@@ -28,15 +28,18 @@ public class Asteriod : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.Play();
-
-        if (other.tag == "Player")
+        if (other.tag != "Enemy")
         {
-            gameController.GameOver();
-        } 
-        gameController.AddScore(pointValue);
-        Destroy(other.gameObject);
-        Destroy(gameObject, .2f);
+            audioSource = GetComponent<AudioSource>();
+            audioSource.Play();
+
+            if (other.tag == "Player")
+            {
+                gameController.GameOver();
+            }
+            gameController.AddScore(pointValue);
+            Destroy(other.gameObject);
+            Destroy(gameObject, .2f);
+        }     
     }
 }

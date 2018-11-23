@@ -7,8 +7,24 @@ https://assetstore.unity.com/packages/3d/environments/asteroids-pack-84988
 	-Utelized 'bottom' texture, 'Asteriod 1' prefab, 'Random Rotater' script attached to 
 	 aforementioned prefab
 
+'Space Debris and Crates' by Ebal Studios
+https://assetstore.unity.com/packages/3d/props/space-debris-and-crates-99699
+	-Utelized 'SpaceDebris5' prefab
+
+'The Asteroid Field' By John Williams,
+Star Wars EpV OST.
+
+Javascript Basic Space Shooter by LessMilk
+http://www.lessmilk.com/tutorial/space-shooter-unity-1
+
+Tutorials for my various script features:
 Video on Inspector fields
 https://youtu.be/xMwjzSlRd00
 
 Boundry system
 https://answers.unity.com/questions/717620/how-to-set-screen-boundaries.html
+
+Unity video tutorial on UI
+https://unity3d.com/learn/tutorials/s/user-interface-ui
+
+'Space' sprite and sfx are original creations.

@@ -26,18 +26,17 @@ public class Debris : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Bullet")
+        if (other.tag != "Enemy")
         {
             Destroy(other.gameObject);
 
+            if (other.tag == "Player")
+            {
+                Destroy(other.gameObject);
+                gameController.GameOver();
+                audioSource = GetComponent<AudioSource>();
+                audioSource.Play();
+            }
         }
-        else if (other.tag == "Player")
-        {
-            Destroy(other.gameObject);
-            gameController.GameOver();
-            audioSource = GetComponent<AudioSource>();
-            audioSource.Play();
-        }
-
     }
 }
