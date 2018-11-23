@@ -4,10 +4,11 @@ using System.Collections;
 public class RandomRotator : MonoBehaviour
 {
     [SerializeField]
-    private float tumble;
+     public float tumble;
 
     void Start()
     {
-        GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;
+        var rb2D = GetComponent<Rigidbody2D>();
+        rb2D.angularVelocity = Random.value * tumble;
     }
 }

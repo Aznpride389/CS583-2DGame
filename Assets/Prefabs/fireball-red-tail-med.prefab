@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50043852851598856}
   - component: {fileID: 114235380200852092}
   - component: {fileID: 70249064007314516}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: fireball-red-tail-med
   m_TagString: Untagged
   m_Icon: {fileID: 0}
