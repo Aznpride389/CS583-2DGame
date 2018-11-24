@@ -11,3 +11,5 @@ ver2.0.X: Various test adjustments to build and player settings.
 Ver3.0: Complete game
 	Changed menu scripts to allow for more generic use.
 	Added Credits Page
+
+Ver3.0.1: Fixed canvas scaling for ui
