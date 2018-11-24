@@ -478,6 +478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   pointValue: 10
+  failureValue: -10
 --- !u!205 &205774230553650286
 LODGroup:
   m_ObjectHideFlags: 1

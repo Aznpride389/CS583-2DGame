@@ -1,0 +1,13 @@
+ver1.0: First build of game, incorrect scene back from day 1 of development. 
+
+ver1.1: Second build with correct scene. Basic play screen with game over and reset.
+
+ver2.0: Menu system added, buttons correctly functioning. 
+	Major additions to game scene(Added additional hazards, scoring system,
+	sfx)
+
+ver2.0.X: Various test adjustments to build and player settings.
+
+Ver3.0: Complete game
+	Changed menu scripts to allow for more generic use.
+	Added Credits Page

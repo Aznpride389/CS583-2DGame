@@ -235,7 +235,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.63529414}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -538,8 +538,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1218043973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
-  m_LocalScale: {x: 0.7893075, y: 1.16319, z: 1.6617}
+  m_LocalPosition: {x: 0.037, y: 10.009, z: 0}
+  m_LocalScale: {x: 0.81075776, y: 1.1853952, z: 1.6617}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1388,10 +1388,10 @@ MonoBehaviour:
   - {fileID: 1499952132453800, guid: badabb0347f608349a0f28f9a2246c3d, type: 2}
   - {fileID: 1099717218934694, guid: 600208eb00fedab4496ae25a90bd6835, type: 2}
   spawnValues: {x: 6.8, y: 23}
-  hazardCount: 15
-  spawnWait: 0.8
+  hazardCount: 12
+  spawnWait: 1
   startWait: 1
-  waveWait: 4.5
+  waveWait: 3.5
   restartText: {fileID: 1236305827}
   gameOverText: {fileID: 1794517459}
   scoreText: {fileID: 1677663095}

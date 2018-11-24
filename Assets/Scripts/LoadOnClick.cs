@@ -10,7 +10,7 @@ public class LoadOnClick : MonoBehaviour
         SceneManager.LoadScene(level);
     }
 
-    public void Update()
+    public void TaskOnClick()
     {
         Application.Quit();
     }

@@ -11,7 +11,7 @@ https://assetstore.unity.com/packages/3d/environments/asteroids-pack-84988
 https://assetstore.unity.com/packages/3d/props/space-debris-and-crates-99699
 	-Utelized 'SpaceDebris5' prefab
 
-'The Asteroid Field' By John Williams,
+'The Asteroid Field' By John Williams
 Star Wars EpV OST.
 
 Javascript Basic Space Shooter by LessMilk
